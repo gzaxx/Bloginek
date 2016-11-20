@@ -7,6 +7,7 @@ namespace Bloginek.Data.Domain
         public Guid Id { get; }
         public bool Active { get; set; }
         public bool Deleted { get; set; }
+        public string Url { get; set; }
         public string Title { get; set; }
         public string Content { get; set; }
         public string Preview { get; set; }
