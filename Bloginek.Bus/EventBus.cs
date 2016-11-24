@@ -16,10 +16,10 @@ namespace Bloginek.Bus
 
         public void Publish<TEvent>(TEvent @event) where TEvent : IEvent
         {
-            Contract.Assert(@event != null, "Event cannot be null.");
+            Contract.Requires(@event != null, "Event cannot be null.");
 
             var eventHandlers = _handlers(typeof(TEvent))
-                .Cast<IHandleEvent<TEvent>>();
+                .Cast<IEventHandler<TEvent>>();
 
             foreach (var handler in eventHandlers)
             {

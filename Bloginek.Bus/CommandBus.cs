@@ -14,11 +14,11 @@ namespace Bloginek.Bus
 
         public void Send<TCommand>(TCommand command) where TCommand : ICommand
         {
-            Contract.Assert(command != null, "Command cannot be null");
+            Contract.Requires(command != null, "Command cannot be null");
 
             var handler = (ICommandHandler<TCommand>)_handlersFactory(typeof(TCommand));
 
-            Contract.Assert(handler == null, "Missing handler for command of type: " + typeof(TCommand));
+            Contract.Requires(handler != null, "Missing handler for command of type: " + typeof(TCommand));
 
             handler.Handle(command);
         }
