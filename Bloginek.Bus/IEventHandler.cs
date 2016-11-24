@@ -4,7 +4,7 @@
     {
     }
 
-    public interface IHandleEvent<TEvent> : IEventHandler
+    public interface IEventHandler<in TEvent> : IEventHandler
         where TEvent : IEvent
     {
         void Handle(TEvent @event);
