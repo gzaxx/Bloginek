@@ -40,6 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\IEntity.cs" />
+    <Compile Include="Domain\PostDto.cs" />
+    <Compile Include="Domain\RedirectDto.cs" />
+    <Compile Include="IConnection.cs" />
+    <Compile Include="IDbReader.cs" />
+    <Compile Include="IDbWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

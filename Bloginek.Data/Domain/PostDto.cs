@@ -4,7 +4,7 @@ namespace Bloginek.Data.Domain
 {
     public class PostDto : IEntity
     {
-        public Guid Id { get; }
+        public Guid Id { get; set; }
         public bool Active { get; set; }
         public bool Deleted { get; set; }
         public string Url { get; set; }
@@ -12,6 +12,6 @@ namespace Bloginek.Data.Domain
         public string Content { get; set; }
         public string Preview { get; set; }
         public DateTime DateCreated { get; set; }
-        public DateTime DatePublished { get; set; }        
+        public DateTime? DatePublished { get; set; }        
     }
 }

@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloginek.Data", "Bloginek.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloginek.Bus.Tests", "Bloginek.Bus.Tests\Bloginek.Bus.Tests.csproj", "{77070177-5E8D-482B-8D99-3A4F2A8F03C3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloginek.Data.SQLite", "Bloginek.Data.SQLite\Bloginek.Data.SQLite.csproj", "{42898306-84B2-40A9-AD47-5FA03D43C60A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bloginek.Data.Db", "Bloginek.Data.Db\Bloginek.Data.Db.csproj", "{073BCD79-9B0D-4D13-A059-96649953054D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{77070177-5E8D-482B-8D99-3A4F2A8F03C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{77070177-5E8D-482B-8D99-3A4F2A8F03C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{77070177-5E8D-482B-8D99-3A4F2A8F03C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42898306-84B2-40A9-AD47-5FA03D43C60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42898306-84B2-40A9-AD47-5FA03D43C60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42898306-84B2-40A9-AD47-5FA03D43C60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42898306-84B2-40A9-AD47-5FA03D43C60A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{073BCD79-9B0D-4D13-A059-96649953054D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{073BCD79-9B0D-4D13-A059-96649953054D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{073BCD79-9B0D-4D13-A059-96649953054D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{073BCD79-9B0D-4D13-A059-96649953054D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
